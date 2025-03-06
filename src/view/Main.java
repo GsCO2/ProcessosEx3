@@ -7,5 +7,4 @@ public class Main {
 		DistroController dc = new DistroController();
 		dc.exibeDistro();
 	}
-		
 }

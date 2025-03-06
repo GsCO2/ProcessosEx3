@@ -32,8 +32,7 @@ public class DistroController {
 			while((linha = buffer.readLine()) != null) {
 				if(linha.contains("NAME=") && !linha.contains("PRETTY_NAME")) {
 					temp = linha.split("=")[1];
-				}
-				if(linha.contains("VERSION=")) {
+				} else if(linha.contains("VERSION=")) {
 					b = linha.split("=")[1];
 					if(temp != null) {
 						System.out.println("Nome: " + temp + "\nVersão da distribuição: " + b );
